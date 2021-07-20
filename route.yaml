@@ -1,0 +1,15 @@
+---
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: f5-hello-world
+  labels:
+    app: f5-hello-world
+spec:
+  to:
+    kind: Service
+    name: f5-hello-world
+    weight: 100
+  port:
+    targetPort: 8080
+  wildcardPolicy: None
