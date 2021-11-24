@@ -5,7 +5,7 @@ metadata:
   labels:
     app.kubernetes.io/instance: acmrepo
     argocd.argoproj.io/managed-by: openshift-gitops
-  name: acmreop
+  name: acmrepo
 spec:
   finalizers:
     - kubernetes
