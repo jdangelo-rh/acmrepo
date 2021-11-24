@@ -9,8 +9,8 @@ spec:
   capacity:
     storage: 2Gi
   nfs:
-    path: /shares/node2
-    server: 172.17.0.2
+    path: /registry
+    server: 10.0.89.87
   persistentVolumeReclaimPolicy: Retain
   storageClassName: dg8storageclass
   volumeMode: Filesystem
