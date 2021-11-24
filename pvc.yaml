@@ -2,12 +2,13 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: pvc-f5
+  name: acmrepo-pvc
+  namespace: acmrepo
 spec:
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
       storage: 2Gi
-  storageClassName: dg8storageclass
-  volumeMode: Filesystem
+  volumeName: acmrepo
+  volumeMode: Filesystem  
