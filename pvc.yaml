@@ -2,7 +2,7 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: acmrepo-pvc
+  name: pvc-f5
   namespace: acmrepo
 spec:
   accessModes:
