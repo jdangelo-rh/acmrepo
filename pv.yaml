@@ -12,4 +12,5 @@ spec:
     path: /shares/node2
     server: 172.17.0.2
   persistentVolumeReclaimPolicy: Retain
+  storageClassName: dg8storageclass
   volumeMode: Filesystem
