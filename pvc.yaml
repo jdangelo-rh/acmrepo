@@ -11,5 +11,5 @@ spec:
     requests:
       storage: 2Gi
   volumeName: acmrepo
-  storageClassName: dg8storageclass
+  storageClassName: nfs-storage
   volumeMode: Filesystem  
