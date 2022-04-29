@@ -6,10 +6,8 @@ metadata:
   namespace: acmrepo
 spec:
   accessModes:
-    - ReadWriteMany
+  - ReadWriteOnce
   resources:
     requests:
       storage: 2Gi
-  volumeName: acmrepo
-  storageClassName: nfs-storage
-  volumeMode: Filesystem  
+  storageClassName: ocs-storagecluster-ceph-rbdmirror
