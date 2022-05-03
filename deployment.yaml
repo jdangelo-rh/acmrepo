@@ -7,12 +7,12 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: f5-hello-world
+      appname: f5-hello-world
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: f5-hello-world
+        appname: f5-hello-world
       annotations:
         backup.velero.io/backup-volumes: pvc-f5
     spec:
