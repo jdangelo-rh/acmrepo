@@ -1,13 +1,15 @@
 ---
-kind: PersistentVolumeClaim
 apiVersion: v1
+kind: PersistentVolumeClaim
 metadata:
   name: pvc-f5
-  namespace: acmrepo
+  labels:
+    appname: f5-hello-world
+  namespace: acmrepo  
 spec:
   accessModes:
-    - ReadWriteOnce
+  - ReadWriteOnce
+  storageClassName: ocs-storagecluster-ceph-rbdmirror
   resources:
     requests:
       storage: 2Gi
-  storageClassName: ocs-storagecluster-ceph-rbdmirror
