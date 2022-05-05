@@ -20,6 +20,9 @@ spec:
       - name: pvc-f5
         persistentVolumeClaim:
           claimName: pvc-f5
+      - name: pvc-f52
+        persistentVolumeClaim:
+          claimName: pvc-f52
       containers:
         - name: f5-hello-world
           image: 'f5devcentral/f5-hello-world:develop'
@@ -33,6 +36,8 @@ spec:
           volumeMounts:
           - name: pvc-f5
             mountPath: /data/
+          - name: pvc-f52
+            mountPath: /data2/            
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
       dnsPolicy: ClusterFirst
