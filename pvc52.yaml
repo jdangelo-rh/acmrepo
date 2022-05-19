@@ -9,7 +9,7 @@ metadata:
 spec:
   accessModes:
   - ReadWriteOnce
-  storageClassName: ocs-storagecluster-ceph-rbdmirror
+  storageClassName: ovirt-csi-sc
   resources:
     requests:
       storage: 2Gi
