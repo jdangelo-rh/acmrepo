@@ -9,7 +9,6 @@ metadata:
 spec:
   accessModes:
   - ReadWriteOnce
-  storageClassName: ovirt-csi-sc
   resources:
     requests:
       storage: 2Gi
