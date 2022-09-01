@@ -9,7 +9,7 @@ metadata:
 spec:
   accessModes:
   - ReadWriteOnce
-  storageClassName: ovirt-csi-sc
+  storageClassName: ocs-external-storagecluster-cephfs
   resources:
     requests:
       storage: 2Gi
