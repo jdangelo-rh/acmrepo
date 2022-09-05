@@ -9,7 +9,7 @@ metadata:
 spec:
   accessModes:
   - ReadWriteOnce
-  storageClassName: ocs-external-storagecluster-cephfs
+  storageClassName: thin
   resources:
     requests:
       storage: 2Gi
