@@ -9,7 +9,6 @@ metadata:
 spec:
   accessModes:
   - ReadWriteOnce
-  storageClassName: thin
   resources:
     requests:
       storage: 2Gi
