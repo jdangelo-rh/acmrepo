@@ -5,7 +5,6 @@ metadata:
   name: pvc-f52
   labels:
     appname: f5-hello-world
-  namespace: acmrepo  
 spec:
   accessModes:
   - ReadWriteOnce
