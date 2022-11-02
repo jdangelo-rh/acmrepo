@@ -3,6 +3,7 @@ kind: Deployment
 apiVersion: apps/v1
 metadata:
   name: f5-hello-world
+  namespace: f5-hello-world
 spec:
   replicas: 1
   selector:
