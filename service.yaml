@@ -3,6 +3,7 @@ kind: Service
 apiVersion: v1
 metadata:
   name: f5-hello-world
+  namespace: f5-hello-world
   labels:
     appname: f5-hello-world
 spec:
