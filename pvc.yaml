@@ -7,6 +7,8 @@ metadata:
   labels:
     appname: f5-hello-world
 spec:
+  accessModes:
+  - ReadWriteOnce
   resources:
     requests:
       storage: 2Gi
